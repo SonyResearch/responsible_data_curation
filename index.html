@@ -24,20 +24,20 @@
   <meta name="og:title" content="Ethical Considerations for Responsible Data Curation &#8211; Practical recommendations for responsibly curating human-centric computer vision datasets for fairness and robustness evaluations, addressing privacy and bias concerns">
   <meta name="og:description" content="Practical recommendations for responsibly curating human-centric computer vision datasets for fairness and robustness evaluations, addressing privacy and bias concerns">
   <meta name="og:type" content="website">
-  <meta name="og:url" content="https://github.com/SonyResearch/responsible_data_curation">
+  <meta name="og:url" content="https://sonyresearch.github.io/responsible_data_curation">
   <meta name="og:site_name" content="Ethical Considerations for Responsible Data Curation">
-  <meta name="og:image" content="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc2.png">
+  <meta name="og:image" content="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc2.png">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ethical Considerations for Responsible Data Curation">
   <meta name="twitter:description" content="Practical recommendations for responsibly curating human-centric computer vision datasets for fairness and robustness evaluations, addressing privacy and bias concerns">
-  <meta name="twitter:image" content="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc2.png">
+  <meta name="twitter:image" content="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc2.png">
 
   <link rel="icon" href="https://research.sony/assets/images/cropped-favicon-32x32.jpg" sizes="32x32">
   <link rel="icon" href="https://research.sony/assets/images/cropped-favicon-192x192.jpg" sizes="192x192">
   <link rel="apple-touch-icon" href="https://research.sony/assets/images/cropped-favicon-180x180.jpg">
 
-  <link rel="stylesheet" type="text/css" href="https://github.com/SonyResearch/responsible_data_curation/assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="https://sonyresearch.github.io/responsible_data_curation/assets/css/main.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css"
     integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
@@ -59,7 +59,7 @@
 <body>
     <header class="page-header">
   <div id="header">
-    <a href="https://ai.sony/"><img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/Sony_AI_PNG_Black.png"
+    <a href="https://ai.sony/"><img src="https://sonyresearch.github.io/responsible_data_curation/assets/images/Sony_AI_PNG_Black.png"
         alt="Sony AI"></a>
   </div>
 </header>
@@ -119,7 +119,7 @@
     <br>
     
     
-    <span><a href=https://github.com/SonyResearch/responsible_data_curation target="_blank">View code</a></span>
+    <span><a href=https://sonyresearch.github.io/responsible_data_curation target="_blank">View code</a></span>
     <br>
     
     
@@ -128,7 +128,7 @@
     
     
     
-    <span><a href="https://github.com/SonyResearch/responsible_data_curation/assets/bib/rdc.bib" target="_blank">Download BibTeX</a></span>
+    <span><a href="https://sonyresearch.github.io/responsible_data_curation/assets/bib/rdc.bib" target="_blank">Download BibTeX</a></span>
     <br>
     
   </p>
@@ -142,51 +142,51 @@
   <h2 id="h2-first">Abstract</h2>
   <p class="mt80">Human-centric computer vision (HCCV) data curation practices often neglect privacy and bias concerns, leading to dataset retractions and unfair models. HCCV datasets constructed through nonconsensual web scraping lack crucial metadata for comprehensive fairness and robustness evaluations.</p>
   <figure class="mb0">
-    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc.png" alt="Example issues related to problematic data curation practices" />
+    <img src="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc.png" alt="Example issues related to problematic data curation practices" />
   </figure>
 
 
 <p>Current remedies are post hoc, lack persuasive justification for adoption, or fail to provide proper contextualization for appropriate application.</p>
   <figure class="mb0">
-    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc3.png" alt="Example issues related to existing solutions that address privacy and bias concerns in data curation" />
+    <img src="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc3.png" alt="Example issues related to existing solutions that address privacy and bias concerns in data curation" />
   </figure>
 
 <p>Our research focuses on proactive, domain-specific recommendations, covering <i>purpose</i>, <i>privacy and consent</i>, and <i>diversity</i>, for curating HCCV evaluation datasets, addressing privacy and bias concerns. We adopt an ante hoc reflective perspective, drawing from current practices, guidelines, dataset withdrawals, and audits, to inform our considerations and recommendations.</p>
 
   <figure class="mb0">
-    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc2.png" alt="The guiding principles behind of considerations and recommendations" />
+    <img src="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc2.png" alt="The guiding principles behind of considerations and recommendations" />
   </figure>
 
-  <p>(To guide data curators towards more ethical yet resource-intensive curation, we also provide a <a href="https://github.com/SonyResearch/responsible_data_curation" target="_blank">checklist</a>.)</p>
+  <p>(To guide data curators towards more ethical yet resource-intensive curation, we also provide a <a href="https://sonyresearch.github.io/responsible_data_curation" target="_blank">checklist</a>.)</p>
 
 <p>It is important to make clear that our proposals are not intended for the evaluation of HCCV systems that detect, predict, or label sensitive or objectionable attributes such as race, gender, sexual orientation, or disability.</p>
   <h2>Considerations and Recommendations</h2>
   <p class="mt80"><b>Purpose</b></p>
 <p>In ML, significant emphasis has been placed on the acquisition and utilization of "general-purpose" datasets<a class="citation" href="#raji2021whole">1</a>. Nevertheless, without a clearly defined task pre-data collection, it becomes challenging to effectively handle issues related to data composition, labeling, data collection methodologies, informed consent, and assessments related to data protection.  We address conflicting dataset motivations and provide recommendations.</p>
   <figure class="mb0">
-    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc5.png" alt="Purpose considerations" />
-    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc6.png" alt="Purpose recommendations" />
+    <img src="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc5.png" alt="Purpose considerations" />
+    <img src="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc6.png" alt="Purpose recommendations" />
   </figure>
 
   <p class="mt80"><b>Consent and Privacy</b></p>
 <p>Informed consent is crucial in research ethics involving humans<a class="citation" href="#nijhawan2013informed">2, 3</a>, ensuring participant safety, protection, and research integrity<a class="citation" href="#code1949nuremberg">4, 5</a>. Shaping data collection practices in various fields(missing reference), informed consent consists of three elements: <i>information</i> (i.e., the participant should have sufficient knowledge about the study to make their decision), <i>comprehension</i> (i.e., the information about the study should be conveyed in an understandable manner), and <i>voluntariness</i> (i.e., consent must be given free of coercion or undue influence). While consent is not the only legal basis for data processing, it is globally preferred for its legitimacy and ability to foster trust<a class="citation" href="#politou2018forgetting">5, 6</a>. We address concerns related to consent and privacy, and provide recommendations.</p>
   <figure class="mb0">
-    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc7.png" alt="Consent and privacy considerations" />
-    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc8.png" alt="Consent and privacy recommendations" />
+    <img src="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc7.png" alt="Consent and privacy considerations" />
+    <img src="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc8.png" alt="Consent and privacy recommendations" />
   </figure>
 
   <p class="mt80"><b>Diversity</b></p>
 <p>HCCV dataset creators widely acknowledge the significance of dataset diversity<a class="citation" href="#karkkainen2021fairface">7, 8, 9, 10, 11, 12, 13, 14, 15, 16</a>, realism<a class="citation" href="#huang2008labeled">17, 18, 11, 16, 8, 19</a>, and difficulty<a class="citation" href="#dalal2005histograms">20, 8, 21, 22, 9, 23, 11, 12, 13, 15, 16, 19</a> to enhance fairness and robustness in real-world applications. Previous research has emphasized diversity across image subjects, environments, and instruments<a class="citation" href="#buolamwini2018gender">24, 25, 26, 27</a>, but there are many ethical complexities involved in specifying diversity criteria<a class="citation" href="#andrus2020working">28, 29, 30, 31</a>. We examine taxonomy challenges and offer recommendations.</p>
   <figure class="mb0">
-    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc9.png" alt="Diversity considerations" />
-    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc10.png" alt="Diversity recommendations" />
+    <img src="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc9.png" alt="Diversity considerations" />
+    <img src="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc10.png" alt="Diversity recommendations" />
   </figure>
 
   <h2>Concluding Remarks</h2>
   <p class="mt80">Supplementary to established ethical review protocols, we have provided proactive, domain-specific recommendations for curating HCCV evaluation datasets for fairness and robustness evaluations. However, encouraging change in ethical practice could encounter resistance or slow adoption due to established norms<a class="citation" href="#metcalf2016human">32</a>, inertia<a class="citation" href="#birhane2022automating">33</a>, diffusion of responsibility<a class="citation" href="#hooker2021moving">34</a>, and liability concerns<a class="citation" href="#andrus2021we">29</a>.</p>
 <figure class="mb0">
   <figure class="mb0">
-    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc11.png" alt="Example reasons why more ethical practices may find resistance" />
+    <img src="https://sonyresearch.github.io/responsible_data_curation/assets/images/rdc11.png" alt="Example reasons why more ethical practices may find resistance" />
   </figure>
 
 <p>To foster acceptance, platforms like NeurIPS could adopt a registered reports format, pre-accepting dataset proposals to address financial uncertainties associated with ethical practices. Moreover, forming data consortia could help overcome operational hurdles (e.g., the implementation and maintenance of consent management systems) faced by smaller organizations and academic research groups through resource and knowledge pooling.</p>
@@ -293,7 +293,7 @@
     <footer class="page-footer">
   <div id="footer">
     <a href="https://research.sony/" target="_blank"><img
-        src="https://github.com/SonyResearch/responsible_data_curation/assets/images/sony_research.svg" alt="Sony Research"></a>
+        src="https://sonyresearch.github.io/responsible_data_curation/assets/images/sony_research.svg" alt="Sony Research"></a>
   </div>
 </footer>
 </body>
