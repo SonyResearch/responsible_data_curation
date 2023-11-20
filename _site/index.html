@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Google tag (gtag.js?2587233464) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5Z6VW9K02M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-5Z6VW9K02M');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>
+    Ethical Considerations for Responsible Data Curation
+  </title>
+
+  <meta name="description" content="Ethical Considerations for Responsible Data Curation">
+
+  <meta name="og:title" content="Ethical Considerations for Responsible Data Curation &#8211; Practical recommendations for responsibly curating human-centric computer vision datasets for fairness and robustness evaluations, addressing privacy and bias concerns">
+  <meta name="og:description" content="Practical recommendations for responsibly curating human-centric computer vision datasets for fairness and robustness evaluations, addressing privacy and bias concerns">
+  <meta name="og:type" content="website">
+  <meta name="og:url" content="https://github.com/SonyResearch/responsible_data_curation">
+  <meta name="og:site_name" content="Ethical Considerations for Responsible Data Curation">
+  <meta name="og:image" content="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc2.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ethical Considerations for Responsible Data Curation">
+  <meta name="twitter:description" content="Practical recommendations for responsibly curating human-centric computer vision datasets for fairness and robustness evaluations, addressing privacy and bias concerns">
+  <meta name="twitter:image" content="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc2.png">
+
+  <link rel="icon" href="https://research.sony/assets/images/cropped-favicon-32x32.jpg" sizes="32x32">
+  <link rel="icon" href="https://research.sony/assets/images/cropped-favicon-192x192.jpg" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://research.sony/assets/images/cropped-favicon-180x180.jpg">
+
+  <link rel="stylesheet" type="text/css" href="https://github.com/SonyResearch/responsible_data_curation/assets/css/main.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css"
+    integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"
+    integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js"
+    integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="page-header">
+  <div id="header">
+    <a href="https://ai.sony/"><img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/Sony_AI_PNG_Black.png"
+        alt="Sony AI"></a>
+  </div>
+</header>
+    <main class="global-container">
+        
+
+
+
+<h1 class="page-heading">
+  <span id="page-heading-conference">NeurIPS 2023 Datasets and Benchmarks (Oral)</span>
+  <span id="page-title">Ethical Considerations for Responsible Data Curation</span>
+  <span id="page-heading-subtitle">Practical recommendations for responsibly curating human-centric computer vision datasets for fairness and robustness evaluations, addressing privacy and bias concerns</span>
+
+  <p id="page-heading-authors" class="cp pb40">
+    
+    
+    <span><a href=https://ai.sony/people/Jerone-Andrews/>Jerone Andrews</a>, Sony AI</span>
+    
+    <br>
+    
+    
+    <span><a href=https://dorazhao99.github.io/> Dora Zhao</a>,  Sony AI</span>
+    
+    <br>
+    
+    
+    <span><a href=https://ai.sony/people/William-Thong/> William Thong</a>,  Sony AI</span>
+    
+    <br>
+    
+    
+    <span> Apostolos Modas,  Sony AI</span>
+    
+    <br>
+    
+    
+    <span><a href=https://ai.sony/people/Orestis-Papakyriakopoulos/> Orestis Papakyriakopoulos</a>,  Sony AI</span>
+    
+    <br>
+    
+    
+    <span><a href=https://ai.sony/people/Alice-Xiang/> Alice Xiang</a>,  Sony AI</span>
+    
+    <br>
+    
+  </p>
+
+  
+  <p id="page-heading-authors" class="cp right tb pt40">
+    
+    <span><a href=https://openreview.net/forum?id=Qf8uzIT1OK target="_blank">Read paper</a>
+    </span>
+    <br>
+    
+    
+    <span><a href=https://neurips.cc/virtual/2023/poster/73597 target="_blank">View poster</a></span>
+    <br>
+    
+    
+    <span><a href=https://github.com/SonyResearch/responsible_data_curation target="_blank">View code</a></span>
+    <br>
+    
+    
+    <span><a href=https://neurips.cc/virtual/2023/poster/73597 target="_blank">Watch video</a></span>
+    <br>
+    
+    
+    
+    <span><a href="https://github.com/SonyResearch/responsible_data_curation/assets/bib/rdc.bib" target="_blank">Download BibTeX</a></span>
+    <br>
+    
+  </p>
+  
+  
+</h1>
+
+<div class="body-container cp">
+  <div class="inner">
+
+  <h2 id="h2-first">Abstract</h2>
+  <p class="mt80">Human-centric computer vision (HCCV) data curation practices often neglect privacy and bias concerns, leading to dataset retractions and unfair models. HCCV datasets constructed through nonconsensual web scraping lack crucial metadata for comprehensive fairness and robustness evaluations.</p>
+  <figure class="mb0">
+    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc.png" alt="Example issues related to problematic data curation practices" />
+  </figure>
+
+
+<p>Current remedies are post hoc, lack persuasive justification for adoption, or fail to provide proper contextualization for appropriate application.</p>
+  <figure class="mb0">
+    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc3.png" alt="Example issues related to existing solutions that address privacy and bias concerns in data curation" />
+  </figure>
+
+<p>Our research focuses on proactive, domain-specific recommendations, covering <i>purpose</i>, <i>privacy and consent</i>, and <i>diversity</i>, for curating HCCV evaluation datasets, addressing privacy and bias concerns. We adopt an ante hoc reflective perspective, drawing from current practices, guidelines, dataset withdrawals, and audits, to inform our considerations and recommendations.</p>
+
+  <figure class="mb0">
+    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc2.png" alt="The guiding principles behind of considerations and recommendations" />
+  </figure>
+
+  <p>(To guide data curators towards more ethical yet resource-intensive curation, we also provide a <a href="https://github.com/SonyResearch/responsible_data_curation" target="_blank">checklist</a>.)</p>
+
+<p>It is important to make clear that our proposals are not intended for the evaluation of HCCV systems that detect, predict, or label sensitive or objectionable attributes such as race, gender, sexual orientation, or disability.</p>
+  <h2>Considerations and Recommendations</h2>
+  <p class="mt80"><b>Purpose</b></p>
+<p>In ML, significant emphasis has been placed on the acquisition and utilization of "general-purpose" datasets<a class="citation" href="#raji2021whole">1</a>. Nevertheless, without a clearly defined task pre-data collection, it becomes challenging to effectively handle issues related to data composition, labeling, data collection methodologies, informed consent, and assessments related to data protection.  We address conflicting dataset motivations and provide recommendations.</p>
+  <figure class="mb0">
+    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc5.png" alt="Purpose considerations" />
+    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc6.png" alt="Purpose recommendations" />
+  </figure>
+
+  <p class="mt80"><b>Consent and Privacy</b></p>
+<p>Informed consent is crucial in research ethics involving humans<a class="citation" href="#nijhawan2013informed">2, 3</a>, ensuring participant safety, protection, and research integrity<a class="citation" href="#code1949nuremberg">4, 5</a>. Shaping data collection practices in various fields(missing reference), informed consent consists of three elements: <i>information</i> (i.e., the participant should have sufficient knowledge about the study to make their decision), <i>comprehension</i> (i.e., the information about the study should be conveyed in an understandable manner), and <i>voluntariness</i> (i.e., consent must be given free of coercion or undue influence). While consent is not the only legal basis for data processing, it is globally preferred for its legitimacy and ability to foster trust<a class="citation" href="#politou2018forgetting">5, 6</a>. We address concerns related to consent and privacy, and provide recommendations.</p>
+  <figure class="mb0">
+    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc7.png" alt="Consent and privacy considerations" />
+    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc8.png" alt="Consent and privacy recommendations" />
+  </figure>
+
+  <p class="mt80"><b>Diversity</b></p>
+<p>HCCV dataset creators widely acknowledge the significance of dataset diversity<a class="citation" href="#karkkainen2021fairface">7, 8, 9, 10, 11, 12, 13, 14, 15, 16</a>, realism<a class="citation" href="#huang2008labeled">17, 18, 11, 16, 8, 19</a>, and difficulty<a class="citation" href="#dalal2005histograms">20, 8, 21, 22, 9, 23, 11, 12, 13, 15, 16, 19</a> to enhance fairness and robustness in real-world applications. Previous research has emphasized diversity across image subjects, environments, and instruments<a class="citation" href="#buolamwini2018gender">24, 25, 26, 27</a>, but there are many ethical complexities involved in specifying diversity criteria<a class="citation" href="#andrus2020working">28, 29, 30, 31</a>. We examine taxonomy challenges and offer recommendations.</p>
+  <figure class="mb0">
+    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc9.png" alt="Diversity considerations" />
+    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc10.png" alt="Diversity recommendations" />
+  </figure>
+
+  <h2>Concluding Remarks</h2>
+  <p class="mt80">Supplementary to established ethical review protocols, we have provided proactive, domain-specific recommendations for curating HCCV evaluation datasets for fairness and robustness evaluations. However, encouraging change in ethical practice could encounter resistance or slow adoption due to established norms<a class="citation" href="#metcalf2016human">32</a>, inertia<a class="citation" href="#birhane2022automating">33</a>, diffusion of responsibility<a class="citation" href="#hooker2021moving">34</a>, and liability concerns<a class="citation" href="#andrus2021we">29</a>.</p>
+<figure class="mb0">
+  <figure class="mb0">
+    <img src="https://github.com/SonyResearch/responsible_data_curation/assets/images/rdc11.png" alt="Example reasons why more ethical practices may find resistance" />
+  </figure>
+
+<p>To foster acceptance, platforms like NeurIPS could adopt a registered reports format, pre-accepting dataset proposals to address financial uncertainties associated with ethical practices. Moreover, forming data consortia could help overcome operational hurdles (e.g., the implementation and maintenance of consent management systems) faced by smaller organizations and academic research groups through resource and knowledge pooling.</p>
+
+<p>Extending our recommendations to the curation of "democratizing" foundation model-sized training datasets<a class="citation" href="#goyal2022vision">35, 36, 37, 38</a> poses an economic challenge. However, it is worth considering that "solutions which resist scale thinking are necessary to undo the social structures which lie at the heart of social inequality"<a class="citation" href="#hanna2020against">39</a>. Large-scale, nonconsensual datasets driven by scale thinking have included harmful and distressing content, including rape(missing reference), racist stereotypes<a class="citation" href="#hanna2020lines">40</a>, vulnerable persons<a class="citation" href="#han2017heterogeneous">41</a>, and derogatory taxonomies<a class="citation" href="#koch2021reduced">42, 43, 44, 45</a>. Such content may further generate legal concerns<a class="citation" href="#viceOpenAIMicrosoft">46</a>. We contend that these issues can be mitigated through the implementation of our recommendations.</p>
+
+<p>Balancing resources between model development and data curation is value-laden, shaped by "social, political, and ethical values"<a class="citation" href="#blili2022making">47</a>. While organizations readily invest significantly in model training<a class="citation" href="#mostaque2022stability">48, 49</a>, compensation for data contributors often appears neglected<a class="citation" href="#vincent2023getty">50, 51</a>, disregarding that "most data represent or impact people"<a class="citation" href="#zook2017ten">52</a>. Remedial actions could be envisioned to bridge the gap between models developed with ethically curated data and those benefiting from expansive, nonconsensually crawled data. Reallocating research funds away from dominant data-hungry methods<a class="citation" href="#blili2022making">47</a> would help to strike a balance between technological advancement and ethical imperatives. </p>
+
+<p>However, the granularity and comprehensiveness of our diversity recommendations could be adapted beyond evaluation contexts, particularly when employing "fairness without demographics"<a class="citation" href="#martinez2021blind">53, 54, 55, 56</a> training approaches, reducing financial costs. Nevertheless, the applicability of any proposed recommendation is intrinsically linked to the specific context<a class="citation" href="#papakyriakopoulos2023augmented">57</a>. Decisions should be guided by the social framework of a given application to ensure ethical and equitable data curation.</p> 
+
+<p>Just as the concepts of identity evolve, our recommendations must also evolve to ensure their ongoing relevance and sensitivity. Thus, we encourage dataset creators to tailor our recommendations to their <i>context</i>, fostering further discussions on responsible data curation.</p>
+
+
+
+
+<div class="inner" style="padding-top: 80px; ">
+  <div class="reference-container">
+
+    <div class="reference-title">
+      <p><b>References</b></p>
+    </div>
+    <div class="reference-text">
+      <ol class="bibliography"><li><span id="raji2021whole">D. Raji, E. Denton, E. M. Bender, A. Hanna, and A. Paullada, “AI and the Everything in the Whole Wide World Benchmark,” in <i>Advances in Neural Information Processing Systems Track on Datasets and Benchmarks (NeurIPS D&amp;B)</i>, 2021. </span></li>
+<li><span id="nijhawan2013informed">L. P. Nijhawan <i>et al.</i>, “Informed consent: Issues and challenges,” <i>Journal of advanced pharmaceutical technology &amp; research</i>, vol. 4, no. 3, p. 134, 2013. </span></li>
+<li><span id="national1978belmont">National Commission for the Proptection of Human Subjects of Biomedicaland Behavioral Research, Bethesda, Md, <i>The Belmont report: Ethical principles and guidelines for the protection of human subjects of research</i>. Superintendent of Documents, 1978. </span></li>
+<li><span id="code1949nuremberg">N. Code, “The Nuremberg Code,” <i>Trials of war criminals before the Nuremberg military tribunals under control council law</i>, vol. 10, no. 2, pp. 181–182, 1949. </span></li>
+<li><span id="politou2018forgetting">E. Politou, E. Alepis, and C. Patsakis, “Forgetting personal data and revoking consent under the GDPR: Challenges and proposed solutions,” <i>Journal of cybersecurity</i>, vol. 4, no. 1, p. tyy001, 2018. </span></li>
+<li><span id="edwards2016privacy">L. Edwards, “Privacy, security and data protection in smart cities: A critical EU law perspective,” <i>Eur. Data Prot. L. Rev.</i>, vol. 2, p. 28, 2016. </span></li>
+<li><span id="karkkainen2021fairface">K. Karkkainen and J. Joo, “Fairface: Face attribute dataset for balanced race, gender, and age for bias measurement and mitigation,” in <i>IEEE Winter Conference on Applications of Computer Vision (WACV)</i>, 2021, pp. 1548–1558. </span></li>
+<li><span id="lin2014microsoft">T.-Y. Lin <i>et al.</i>, “Microsoft coco: Common objects in context,” in <i>European Conference on Computer Vision (ECCV)</i>, 2014, pp. 740–755. </span></li>
+<li><span id="deng2009imagenet">J. Deng, W. Dong, R. Socher, L.-J. Li, K. Li, and L. Fei-Fei, “Imagenet: A large-scale hierarchical image database,” in <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2009, pp. 248–255. </span></li>
+<li><span id="karras2019style">T. Karras, S. Laine, and T. Aila, “A style-based generator architecture for generative adversarial networks,” in <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2019, pp. 4401–4410. </span></li>
+<li><span id="kay2017kinetics">W. Kay <i>et al.</i>, “The kinetics human action video dataset,” <i>arXiv preprint arXiv:1705.06950</i>, 2017. </span></li>
+<li><span id="andriluka20142d">M. Andriluka, L. Pishchulin, P. Gehler, and B. Schiele, “2d human pose estimation: New benchmark and state of the art analysis,” in <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2014, pp. 3686–3693. </span></li>
+<li><span id="cordts2016cityscapes">M. Cordts <i>et al.</i>, “The cityscapes dataset for semantic urban scene understanding,” in <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2016, pp. 3213–3223. </span></li>
+<li><span id="sarkar2005humanid">S. Sarkar, P. J. Phillips, Z. Liu, I. R. Vega, P. Grother, and K. W. Bowyer, “The humanid gait challenge problem: Data sets, performance, and analysis,” <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>, vol. 27, no. 2, pp. 162–177, 2005. </span></li>
+<li><span id="xiong2015recognize">Y. Xiong, K. Zhu, D. Lin, and X. Tang, “Recognize complex events from static images by fusing deep channels,” in <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2015, pp. 1600–1609. </span></li>
+<li><span id="yang2016wider">S. Yang, P. Luo, C.-C. Loy, and X. Tang, “Wider face: A face detection benchmark,” in <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2016, pp. 5525–5533. </span></li>
+<li><span id="huang2008labeled">G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, “Labeled faces in the wild: A database forstudying face recognition in unconstrained environments,” in <i>Workshop on faces in’Real-Life’Images: detection, alignment, and recognition</i>, 2008. </span></li>
+<li><span id="jesorsky2001robust">O. Jesorsky, K. J. Kirchberg, and R. W. Frischholz, “Robust face detection using the hausdorff distance,” in <i>Audio-and Video-Based Biometric Person Authentication: Third International Conference, AVBPA 2001 Halmstad, Sweden, June 6–8, 2001 Proceedings 3</i>, 2001, pp. 90–95. </span></li>
+<li><span id="geiger2012we">A. Geiger, P. Lenz, and R. Urtasun, “Are we ready for autonomous driving? the kitti vision benchmark suite,” in <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2012, pp. 3354–3361. </span></li>
+<li><span id="dalal2005histograms">N. Dalal and B. Triggs, “Histograms of oriented gradients for human detection,” in <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2005, vol. 1, pp. 886–893. </span></li>
+<li><span id="angelova2005pruning">A. Angelova, Y. Abu-Mostafam, and P. Perona, “Pruning training sets for learning of object categories,” in <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2005, pp. 494–501. </span></li>
+<li><span id="everingham2010pascal">M. Everingham, L. Van Gool, C. K. I. Williams, J. Winn, and A. Zisserman, “The pascal visual object classes (voc) challenge,” <i>International journal of computer vision</i>, vol. 88, no. 2, pp. 303–338, 2010. </span></li>
+<li><span id="liu2015deep">Z. Liu, P. Luo, X. Wang, and X. Tang, “Deep learning face attributes in the wild,” in <i>IEEE International Conference on Computer Vision (ICCV)</i>, 2015, pp. 3730–3738. </span></li>
+<li><span id="buolamwini2018gender">J. Buolamwini and T. Gebru, “Gender shades: Intersectional accuracy disparities in commercial gender classification,” in <i>ACM Conference on Fairness, Accountability, and Transparency (FAccT)</i>, 2018, pp. 77–91. </span></li>
+<li><span id="hendricks2018women">L. A. Hendricks, K. Burns, K. Saenko, T. Darrell, and A. Rohrbach, “Women also snowboard: Overcoming bias in captioning models,” in <i>European Conference on Computer Vision (ECCV)</i>, 2018, pp. 771–787. </span></li>
+<li><span id="mitchell2018model">M. Mitchell <i>et al.</i>, “Model cards for model reporting,” in <i>ACM Conference on Fairness, Accountability, and Transparency (FAccT)</i>, 2019, pp. 220–229. </span></li>
+<li><span id="scheuerman2021datasets">M. K. Scheuerman, A. Hanna, and E. Denton, “Do datasets have politics? Disciplinary values in computer vision dataset development,” <i>Proceedings of the ACM on Human-Computer Interaction</i>, vol. 5, no. CSCW2, pp. 1–37, 2021. </span></li>
+<li><span id="andrus2020working">M. K. Andrus, E. Spitzer, and A. Xiang, “Working to Address Algorithmic Bias? Don’t Overlook the Role of Demographic Data,” <i>Partnership on AI</i>, 2020. </span></li>
+<li><span id="andrus2021we">M. K. Andrus, E. Spitzer, J. Brown, and A. Xiang, “What We Can’t Measure, We Can’t Understand: Challenges to Demographic Data Procurement in the Pursuit of Fairness,” in <i>ACM Conference on Fairness, Accountability, and Transparency (FAccT)</i>, 2021, pp. 249–260. </span></li>
+<li><span id="andrews2023view">J. T. A. Andrews, P. Joniak, and A. Xiang, “A View From Somewhere: Human-Centric Face Representations,” in <i>International Conference on Learning Representations (ICLR)</i>, 2023. </span></li>
+<li><span id="zhao2022men">D. Zhao, J. T. A. Andrews, and A. Xiang, “Men Also Do Laundry: Multi-Attribute Bias Amplification,” in <i>International Conference on Machine Learning (ICML)</i>, 2023. </span></li>
+<li><span id="metcalf2016human">J. Metcalf and K. Crawford, “Where are human subjects in big data research? The emerging ethics divide,” <i>Big Data &amp; Society</i>, vol. 3, no. 1, p. 2053951716650211, 2016. </span></li>
+<li><span id="birhane2022automating">A. Birhane, “Automating ambiguity: Challenges and pitfalls of artificial intelligence,” <i>arXiv preprint arXiv:2206.04179</i>, 2022. </span></li>
+<li><span id="hooker2021moving">S. Hooker, “Moving beyond ‘algorithmic bias is a data problem,’” <i>Patterns</i>, vol. 2, no. 4, p. 100241, 2021. </span></li>
+<li><span id="goyal2022vision">P. Goyal <i>et al.</i>, “Vision models are more robust and fair when pretrained on uncurated images without supervision,” <i>arXiv preprint arXiv:2202.08360</i>, 2022. </span></li>
+<li><span id="schuhmann2021laion">C. Schuhmann <i>et al.</i>, “Laion-400m: Open dataset of clip-filtered 400 million image-text pairs,” <i>arXiv preprint arXiv:2111.02114</i>, 2021. </span></li>
+<li><span id="schuhmann2022laion">C. Schuhmann <i>et al.</i>, “Laion-5b: An open large-scale dataset for training next generation image-text models,” <i>Advances in Neural Information Processing Systems (NeurIPS)</i>, vol. 35, pp. 25278–25294, 2022. </span></li>
+<li><span id="gadre2023datacomp">S. Y. Gadre <i>et al.</i>, “DataComp: In search of the next generation of multimodal datasets,” <i>arXiv preprint arXiv:2304.14108</i>, 2023. </span></li>
+<li><span id="hanna2020against">A. Hanna and T. M. Park, “Against scale: Provocations and resistances to scale thinking,” <i>arXiv preprint arXiv:2010.08850</i>, 2020. </span></li>
+<li><span id="hanna2020lines">A. Hanna, E. Denton, R. Amironesei, A. Smart, and H. Nicole, “Lines of Sight,” <i>Logic(s)</i>. https://logicmag.io/commons/lines-of-sight/, 2020. </span></li>
+<li><span id="han2017heterogeneous">H. Han, A. K. Jain, F. Wang, S. Shan, and X. Chen, “Heterogeneous face attribute estimation: A deep multi-task learning approach,” <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>, vol. 40, no. 11, pp. 2597–2609, 2017. </span></li>
+<li><span id="koch2021reduced">B. Koch, E. Denton, A. Hanna, and J. G. Foster, “Reduced, Reused and Recycled: The Life of a Dataset in Machine Learning Research,” in <i>Advances in Neural Information Processing Systems Datasets and Benchmarks Track (NeurIPS D&amp;B)</i>, 2021. </span></li>
+<li><span id="birhane2021large">A. Birhane and V. U. Prabhu, “Large image datasets: A pyrrhic win for computer vision?,” in <i>IEEE Winter Conference on Applications of Computer Vision (WACV)</i>, 2021, pp. 1536–1546. </span></li>
+<li><span id="hanley2020ethical">M. Hanley, A. Khandelwal, H. Averbuch-Elor, N. Snavely, and H. Nissenbaum, “An Ethical Highlighter for People-Centric Dataset Creation,” <i>Advances in Neural Information Processing Systems Workshop (NeurIPSW)</i>, 2020. </span></li>
+<li><span id="crawford2019excavating">K. Crawford and T. Paglen, “Excavating AI: The politics of images in machine learning training sets,” <i>Ai &amp; Society</i>, vol. 36, no. 4, pp. 1105–1116, 2021. </span></li>
+<li><span id="viceOpenAIMicrosoft">“OpenAI and Microsoft Sued for $3 Billion Over Alleged ChatGPT ’Privacy Violations’ — vice.com.” https://www.vice.com/en/article/wxjxgx/openai-and-microsoft-sued-for-dollar3-billion-over-alleged-chatgpt-privacy-violations. </span></li>
+<li><span id="blili2022making">B. Blili-Hamelin and L. Hancox-Li, “Making Intelligence: Ethical Values in IQ and ML Benchmarks,” in <i>ACM Conference on Fairness, Accountability, and Transparency (FAccT)</i>, 2023, pp. 271–284. </span></li>
+<li><span id="mostaque2022stability">E. Mostaque (Stability AI), “We actually used 256 A100s for this per the model card, 150k hours in total so at market price $600k,” <i>Twitter</i>. https://twitter.com/emostaque/status/1563870674111832066, 28-Aug-2022. </span></li>
+<li><span id="vincent2022midjourney">J. Vincent, “‘An engine for the imagination’: the rise of AI image generators. An interview with Midjourney founder David Holz.” The Verge, 03-Aug-2022. </span></li>
+<li><span id="vincent2023getty">J. Vincent, “Getty Images is suing the creators of AI art tool stable diffusion for scraping its content,” <i>The Verge</i>. https://www.theverge
+	.com/2023/1/17/23558516/ai-art-copyright-stable-diffusion-getty-images-lawsuit, Jan-2023. </span></li>
+<li><span id="vincent2023ai">J. Vincent, “AI art tools stable diffusion and Midjourney targeted with copyright lawsuit,” <i>The Verge</i>. https://www.theverge.com/2023/1/16/23557098/generative-ai-art-copyright-legal-lawsuit-stable-diffusion-midjourney-deviantart, Jan-2023. </span></li>
+<li><span id="zook2017ten">M. Zook <i>et al.</i>, “Ten simple rules for responsible big data research,” <i>PLoS computational biology</i>, vol. 13, no. 3. Public Library of Science San Francisco, CA USA, p. e1005399, 2017. </span></li>
+<li><span id="martinez2021blind">N. L. Martinez, M. A. Bertran, A. Papadaki, M. Rodrigues, and G. Sapiro, “Blind pareto fairness and subgroup robustness,” in <i>International Conference on Machine Learning</i>, 2021, pp. 7492–7501. </span></li>
+<li><span id="lahoti2020fairness">P. Lahoti <i>et al.</i>, “Fairness without demographics through adversarially reweighted learning,” <i>Advances in Neural Information Processing Systems (NeurIPS)</i>, vol. 33, pp. 728–740, 2020. </span></li>
+<li><span id="hashimoto2018fairness">T. Hashimoto, M. Srivastava, H. Namkoong, and P. Liang, “Fairness without demographics in repeated loss minimization,” in <i>International Conference on Machine Learning</i>, 2018, pp. 1929–1938. </span></li>
+<li><span id="chai2022fairness">J. Chai, T. Jang, and X. Wang, “Fairness without demographics through knowledge distillation,” <i>Advances in Neural Information Processing Systems (NeurIPS)</i>, vol. 35, pp. 19152–19164, 2022. </span></li>
+<li><span id="papakyriakopoulos2023augmented">O. Papakyriakopoulos <i>et al.</i>, “Augmented Datasheets for Speech Datasets and Ethical Decision-Making,” in <i>ACM Conference on Fairness, Accountability, and Transparency (FAccT)</i>, 2023, pp. 881–904. </span></li></ol>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="inner" style="padding-top: 80px; ">
+  <div class="acknowledge-container">
+
+    <div class="acknowledge-title">
+      <p><b>Acknowledgments</b></p>
+    </div>
+    <div class="acknowledge-text">
+      <p>This work was funded by Sony Research Inc.</p>
+    </div>
+
+  </div>
+</div>
+</figure></div>
+
+</div>
+    </main>
+    <footer class="page-footer">
+  <div id="footer">
+    <a href="https://research.sony/" target="_blank"><img
+        src="https://github.com/SonyResearch/responsible_data_curation/assets/images/sony_research.svg" alt="Sony Research"></a>
+  </div>
+</footer>
+</body>
+
+</html>
