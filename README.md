@@ -2,14 +2,13 @@
 
 Practical recommendations for responsibly curating human-centric computer vision datasets for fairness and robustness evaluations, addressing privacy and bias concerns.
 
-NeurIPS 2023 Datasets and Benchmarks (Oral)
+[NeurIPS 2023 Datasets and Benchmarks (Oral)](https://neurips.cc/virtual/2023/oral/73743)
 
 [Sony AI](https://ai.sony)
 
 [Jerone Andrews](mailto:jerone.andrews@sony.com), Dora Zhao, William Thong, Apostolos Modas, Orestis Papakyriakopoulos, Alice Xiang
 
-
-[[`Paper`](https://openreview.net/forum?id=Qf8uzIT1OK)] [[`Project`](https://openreview.net/forum?id=Qf8uzIT1OK)] [[`Checklist`](checklist/)] [[`BibTeX`](#BibTeX)]
+[[`Paper`](https://openreview.net/forum?id=Qf8uzIT1OK)] [[`Project`](https://sonyresearch.github.io/responsible_data_curation/)] [[`Checklist`](checklist/)] [[`BibTeX`](#BibTeX)]
 
 ### BibTeX
 
